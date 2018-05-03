@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="40dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/tagertET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="类名"
+        android:text="red.dim.dynamiclog.TestMethod" />
+
+    <EditText
+        android:text="1"
+        android:id="@+id/methodET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="methodId" />
+
+    <CheckBox
+        android:id="@+id/beforeCB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="方法前" />
+
+    <CheckBox
+        android:id="@+id/afterCB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="方法后" />
+
+    <Button
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更新规则" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/method1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="方法1" />
+
+        <Button
+            android:id="@+id/method2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="方法2" />
+
+        <Button
+            android:id="@+id/method3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="方法3" />
+    </LinearLayout>
+
+</LinearLayout>

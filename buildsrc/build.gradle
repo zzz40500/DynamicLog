@@ -1,0 +1,26 @@
+apply plugin: 'groovy'
+
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://maven.google.com'
+        }
+        jcenter()
+    }
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven {
+        url 'https://maven.google.com'
+    }
+
+}
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    compile 'com.android.tools.build:gradle:3.0.0'
+    compile project(':monitor-build-plugin')
+}

@@ -1,0 +1,3 @@
+rootProject.name = 'monitor-build'
+include ':monitor-build-plugin'
+project(":monitor-build-plugin").projectDir = new File("../monitor-build-plugin")
